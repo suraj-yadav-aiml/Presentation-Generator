@@ -1,3 +1,16 @@
+---
+title: AI Powered Presentation Generator
+emoji: 🤖
+colorFrom: yellow
+colorTo: red
+sdk: streamlit
+sdk_version: 1.44.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Generate AI Powered Presentations
+---
+
 # 🎯 Presentation Generator
 
 A powerful AI-driven tool that automatically generates professional presentations based on user-defined topics, audience, and styling preferences.
