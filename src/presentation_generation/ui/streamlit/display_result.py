@@ -58,10 +58,12 @@ class DisplayResultStreamlit:
                 
                 with st.chat_message('assistant', avatar="🤖"):
 
+                    topic = self.user_input.get('topic',"Presentation")
+                    file_name = datetime.now().strftime("%Y%m%d_%H%M%S")
                     st.download_button(
                         label="📥 Download Presentation",
                         data=presentation_content,
-                        file_name=f"{self.user_input.get('topic')}_{datetime.now().strftime("%Y%m%d_%H%M%S")}.md",
+                        file_name=f"{topic}_{file_name}.md",
                         mime="text/markdown",
                     )
 
